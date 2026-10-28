@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="fon" Color=" #CD9A7B"/>
+    <SolidColorBrush x:Key="btn" Color="#6C3B2A"/>
+    <SolidColorBrush x:Key="secBtn" Color="#8B6D5C"/>
+    <SolidColorBrush x:Key="gray" Color="#88706B"/>
+    <SolidColorBrush x:Key="pressed" Color="#4C2F27"/>
+
+</ResourceDictionary>

@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:pr6"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ListPage">
+      Title="ListPage"
+      Style="{StaticResource page}">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -16,38 +17,52 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Horizontal">
-            <Label Content="Библиотека" Style="{StaticResource zag}"/>
+            <TextBlock Style="{StaticResource zag}" Text="Библиотека"/>
             
         </StackPanel>
         <StackPanel Grid.Row="1">
-            <Label Style="{StaticResource mini}" Content="Категория"/>
+            <TextBlock  Text="Категория" Style="{StaticResource mini}"/>
            
-            <ComboBox Width="150">
+            <ComboBox Width="250" Style="{StaticResource cmbBox}">
                 <ComboBoxItem Content="Детектив"/>
                 <ComboBoxItem Content="Фэнтези"/>
                 <ComboBoxItem Content="Роман"/>
             </ComboBox>
 
-           
-
-            <Label Style="{StaticResource mini}" Content="Название"/>
+            <TextBlock  Text="Название" Style="{StaticResource mini}"/>
             
-            <TextBox Margin="5" Width="150"/>
-             <RadioButton Content="Аудиокнига"/>
-            <Button Style="{StaticResource def}" Width="100">
+            <TextBox Width="250" Style="{StaticResource txtBox}"/>
+            <CheckBox Content="Аудиокнига" Style="{StaticResource chkB}"/>
+            <CheckBox Content="Книга" Style="{StaticResource chkB}"/>
+            <RadioButton Content="Бесплатно" Style="{StaticResource rdBtn}"/>
+            <Button  Width="150" Style="{StaticResource def}"  IsEnabled="False">
                 Поиск
             </Button>
         </StackPanel>
-        <Button Grid.Row="2" Grid.Column="1" Width="100" Style="{StaticResource danger}">
+        
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Border Width="300" Height="300" BorderBrush="{StaticResource gray}" BorderThickness="10" Margin="5">
+                <TextBlock Text="Найденные книги" Style="{StaticResource mini}" >
+                    <Border CornerRadius="5"/>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        
+        <Button Grid.Row="2" Grid.Column="1" Width="100" Style="{StaticResource danger}" IsEnabled="False">
             Выйти
         </Button>
-        <Button Grid.Row="2"  Style="{StaticResource sec}">
+        <Button Grid.Row="2"  Style="{StaticResource sec}" Click="Button_Click">
             Сменить режим 
         </Button>
-        <ProgressBar Grid.Row="2" Grid.Column="3"/>
+        <ProgressBar Grid.Row="2" Grid.Column="2" />
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <TextBlock Text="Оставить отзыв" Style="{StaticResource mini}"/>
+            <TextBox Style="{StaticResource multyLine}"  Height="70" Width="200" />
+            <Button Style="{StaticResource def}" Width="200"  IsEnabled="False">Отправить</Button>
+        </StackPanel>
     </Grid>
 </Page>

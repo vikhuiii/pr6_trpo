@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="ComboBox" x:Key="cmbBox">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Background" Value="{DynamicResource secBtn}"/>
+        <Setter Property="Margin" Value="5"/>
+
+    </Style>
+    <Style TargetType="ComboBoxItem">
+        <Setter Property="Background" Value="{DynamicResource secBtn}"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+</ResourceDictionary>

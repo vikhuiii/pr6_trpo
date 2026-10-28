@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\moskvina\pr6\App.xaml
-2-847843295
+12973992734
 
-51641872237
+7919423339
 198-211836927
-ListPage.xaml;MainWindow.xaml;
+ListPage.xaml;MainWindow.xaml;Styles\Colors\DarkTheme.xaml;Styles\Colors\DictionaryColors.xaml;Styles\UI\DictionaryButton.xaml;Styles\UI\DictionaryCheckBox.xaml;Styles\UI\DictionaryCmbBox.xaml;Styles\UI\DictionaryLabels.xaml;Styles\UI\DictionaryProgBar.xaml;Styles\UI\DictionaryRadioBtn.xaml;Styles\UI\DictionaryTextBox.xaml;Styles\UI\DictionaryWindow.xaml;
 
 False
 

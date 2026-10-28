@@ -20,9 +20,17 @@ namespace pr6
     /// </summary>
     public partial class ListPage : Page
     {
+       
         public ListPage()
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ThemeHelper.Toggle();
+        }
+
+        
     }
 }
